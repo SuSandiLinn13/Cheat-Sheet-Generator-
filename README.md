@@ -48,17 +48,26 @@ The summarization pipeline consists of three major components:
 
 ## Project Structure
 Cheat-Sheet-Generator/
+Cheat-Sheet-Generator/
 │
 ├── model/
-│ ├── bert_model/
-│ ├── logistic_model.pkl
-│ └── tfidf_vectorizer.pkl
+│   ├── bert_model/             
+│   ├── logistic_model.pkl      
+│   └── tfidf_vectorizer.pkl      
 │
 ├── extractive-summarizer-bert-based-uncased.ipynb
+│                                   # BERT-based sentence embedding & scoring
+│
 ├── hybrid-extrative-text-summarizer.ipynb
+│                                   # Final hybrid summarization pipeline
+│
 ├── Logistic_regression_cheetaxh.ipynb
-├── pdf_combination.ipynb
-├── extracted_equations.ipynb
+│                                   # Training Logistic Regression model
+│
+├── pdf_combination.ipynb            # Combine multiple lecture PDFs and equations in LaTeX
+│
+├── extracted_equations.ipynb        # Extract equations from documents and changed into LaTeX form
+│
 └── README.md
 
 
