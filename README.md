@@ -45,6 +45,33 @@ The summarization pipeline consists of three major components:
 7. Selected sentences are merged to generate the final cheat-sheet  
 
 ---
+## Notebooks Description
+
+This project contains several Jupyter notebooks that implement different stages of the hybrid summarization pipeline.
+
+### pdf_combination.ipynb
+- Combines multiple lecture PDF files into a single document  
+- Performs initial text extraction and preprocessing  
+
+### extractive-summarizer-bert-based-uncased.ipynb
+- Uses pretrained BERT model to generate contextual sentence embeddings  
+- Computes semantic importance scores for each sentence  
+
+### Logistic_regression_cheetaxh.ipynb
+- Trains the Logistic Regression classifier  
+- Uses TF-IDF features to learn sentence importance  
+- Saves the trained model (`logistic_model.pkl`)  
+
+### hybrid-extrative-text-summarizer.ipynb
+- Main notebook implementing the hybrid summarization pipeline  
+- Combines BERT semantic scores with Logistic Regression predictions  
+- Generates the final cheat-sheet summary  
+
+### extracted_equations.ipynb
+- Extracts equations from lecture materials  
+- Converts detected equations into LaTeX format for structured notes  
+
+---
 
 ## Key Features
 
