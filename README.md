@@ -11,7 +11,14 @@ This hybrid approach helps capture both:
 - Keyword-based statistical significance
 
 ---
+## Kaggle Notebook
 
+You can explore the full implementation and run the hybrid summarization pipeline on Kaggle:
+
+🔗 **Hybrid Extractive Text Summarizer Notebook**  
+https://www.kaggle.com/code/susandilinn/hybrid-text-summarizer
+
+---
 ## Model Architecture
 
 The summarization pipeline consists of three major components:
